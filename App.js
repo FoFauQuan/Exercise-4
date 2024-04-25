@@ -1,4 +1,5 @@
 
+import "react-native-gesture-handler"
 import {NavigationContainer} from '@react-navigation/native';
 import { PaperProvider, Text} from 'react-native-paper';
 import { MainStackNavigator } from './navigation/StackNavigator';
@@ -10,11 +11,13 @@ import DrawerNavigator from './navigation/DrawerNavigator';
 
 const App=()=>{
   return(
-    <PaperProvider>
+   
       <NavigationContainer>
+         <PaperProvider>
           <DrawerNavigator/>
+         </PaperProvider>
       </NavigationContainer>
-    </PaperProvider>
+   
   )
 }
 export default App;

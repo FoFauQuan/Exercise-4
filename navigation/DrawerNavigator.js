@@ -10,14 +10,14 @@ const Drawer = createDrawerNavigator();
 const DrawerNavigator = () => {
   return (
     <Drawer.Navigator
-    screenOptions={{
-        header:(props)=> <CustonNavigationBar {...props}/>,
-        headerStyle: {
-            backgroundColor: "#9AC4F8",
-        },
-        headerTintColor: "white",
-        headerBackTitle: "Back",
-        }}
+    // screenOptions={{
+    //     header:(props)=> <CustonNavigationBar {...props}/>,
+    //     headerStyle: {
+    //         backgroundColor: "#9AC4F8",
+    //     },
+    //     headerTintColor: "white",
+    //     headerBackTitle: "Back",
+    //     }}
     >
       <Drawer.Screen name="Home" component={HomeScreen} />
       <Drawer.Screen name="Details" component={DetailScreen} />
